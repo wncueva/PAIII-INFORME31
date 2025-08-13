@@ -1,0 +1,102 @@
+/* src/styles/FormularioPaciente.css */
+
+/* Estilo general del formulario */
+.formulario-paciente {
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #f9fafb;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Inter', 'Roboto', sans-serif;
+}
+
+/* Estilo para las etiquetas */
+.formulario-paciente .field label {
+    font-weight: 600;
+    color: #374151;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Estilo para los campos de entrada */
+.formulario-paciente .p-inputtext {
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    padding: 0.75rem;
+    font-size: 1rem;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.formulario-paciente .p-inputtext:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+/* Estilo para el campo de calendario */
+.formulario-paciente .p-calendar .p-inputtext {
+    border-radius: 6px 0 0 6px;
+}
+
+/* Botón del calendario: aseguramos que se vea */
+.formulario-paciente .p-calendar .p-datepicker-trigger {
+    background-color: #3b82f6 !important;
+    border: none !important;
+    width: 3rem;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-shadow: none !important;
+}
+
+.formulario-paciente .p-calendar .p-datepicker-trigger:hover {
+    background-color: #2563eb !important;
+}
+
+/* Asegura que el ícono (pi pi-calendar) sea visible */
+.formulario-paciente .p-calendar .p-datepicker-trigger .pi {
+    color: white !important;
+    font-size: 1rem;
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+/* Estilo para los campos con error */
+.formulario-paciente .p-invalid {
+    border-color: #ef4444;
+}
+
+.formulario-paciente .p-error {
+    color: #ef4444;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+}
+
+/* Estilo para el botón */
+.formulario-paciente .p-button {
+    background-color: #3b82f6;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 6px;
+    transition: background-color 0.2s;
+}
+
+.formulario-paciente .p-button:hover {
+    background-color: #2563eb;
+}
+
+/* Espaciado entre campos */
+.formulario-paciente .field {
+    margin-bottom: 1.5rem;
+}
+
+/* Estilo responsivo */
+@media (max-width: 600px) {
+    .formulario-paciente {
+        padding: 1.5rem;
+        margin: 1rem;
+    }
+}
